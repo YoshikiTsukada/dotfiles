@@ -7,7 +7,7 @@ alias gch='git checkout'
 alias gs='git status'
 alias gd='git diff'
 alias ga='git add'
-alias gc='git commit -m'
+alias gc='(){git commit -m "$1"}'
 alias gl='git log'
 
 alias kenkosetup='bundle exec rake carthage:bootstrap && xcodegen && bundle exec pod install'
