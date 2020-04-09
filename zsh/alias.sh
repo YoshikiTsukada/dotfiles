@@ -8,6 +8,7 @@ alias gs='git status'
 alias gd='git diff'
 alias ga='git add'
 alias gc='git commit -m'
+alias gp='git push origin HEAD'
 alias gl='git log'
 
 alias kenkosetup='bundle exec rake carthage:bootstrap && xcodegen && bundle exec pod install'
