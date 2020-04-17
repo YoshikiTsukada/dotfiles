@@ -9,6 +9,7 @@ alias gd='git diff'
 alias ga='git add'
 alias gc='git commit -m'
 alias gp='git push origin HEAD'
+alias gfp='git push -f origin HEAD'
 alias gl='git log'
 
 alias kenkosetup='bundle exec rake carthage:bootstrap && xcodegen && bundle exec pod install'
