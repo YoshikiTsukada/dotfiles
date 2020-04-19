@@ -19,6 +19,8 @@ if dein#load_state('~/.cache/dein')
   call dein#add('markonm/traces.vim')
   call dein#add('keith/swift.vim')
   call dein#add('preservim/nerdtree')
+  call dein#add('Xuyuanp/nerdtree-git-plugin')
+  call dein#add('airblade/vim-gitgutter')
 
   " Required:
   call dein#end()
@@ -34,8 +36,15 @@ if dein#check_install()
   call dein#install()
 endif
 
+" other settings
 syntax on
 set number
 set hlsearch
 
+" nerdtree
 nnoremap <silent><C-k> :NERDTreeToggle<CR>
+let NERDTreeShowHidden=1
+
+" vim-gitgutter
+highlight GitGutterAdd ctermfg=green ctermbg=green
+highlight GitGutterDelete ctermfg=red ctermbg=red
