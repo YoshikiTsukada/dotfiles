@@ -5,6 +5,7 @@ ZSHHOME="${HOME}/dotfiles/zsh"
 
 source $ZSHHOME/alias.sh
 source $ZSHHOME/other_settings.sh
+source $ZSHHOME/path.sh
 source $ZSHHOME/zplug_alien.zsh
 source $ZSHHOME/zplug_zsh-autosuggestions.zsh
 
