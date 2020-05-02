@@ -1,7 +1,8 @@
-VSCODE_SETTING_DIR=~/Library/Application\ Support/Code/User
+SETTING_DIR="$HOME/Library/Application Support/Code/User"
+VSCODEHOME="$HOME/dotfiles/vscode"
 
-ln -is "./settings.json" "${VSCODE_SETTING_DIR}/settings.json"
-ln -is "./keybindings.json" "${VSCODE_SETTING_DIR}/keybindings.json"
+ln -is $VSCODEHOME/settings.json "${SETTING_DIR}/settings.json"
+ln -is $VSCODEHOME/keybindings.json "${SETTING_DIR}/keybindings.json"
 
 cat extensions | while read line
 do
