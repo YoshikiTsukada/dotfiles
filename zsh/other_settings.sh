@@ -1,3 +1,6 @@
+# rbenvの初期化
+eval "$(rbenv init -)"
+
 # タブの保管候補をハイライトする
 autoload -U compinit
 compinit
