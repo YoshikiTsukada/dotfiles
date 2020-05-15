@@ -2,4 +2,5 @@
     "editor.tabSize": 2, 
 
     "latex-workshop.latex.autoBuild.run": "never",
+    "files.autoSave": "afterDelay",
 }
