@@ -20,6 +20,7 @@ autoCompileTex() {
     echo 'Please input file name.'
   elif [[ -e ./$1.tex ]]; then
     platex $1.tex
+    platex $1.tex
     dvipdfmx $1.dvi
     rm $1.aux
     rm $1.dvi
