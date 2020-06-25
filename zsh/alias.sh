@@ -15,6 +15,10 @@ alias gl='git log'
 alias kenkosetup='bundle exec rake carthage:bootstrap && xcodegen && bundle exec pod install'
 alias kenkoopen='open kenko.xcworkspace'
 
+clang.c() {
+  clang -Wall  -o $1 $1.c
+}
+
 autoCompileTex() {
   if [ -z "$1" ]; then
     echo 'Please input file name.'
